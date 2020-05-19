@@ -1,0 +1,477 @@
+@import "_custom";  // 5. Add your styles into this file
+
+#gform_1 {
+	
+	ul{
+		.gfield{
+			margin-bottom: 0px !important;
+			padding-bottom: 30px !important;
+			select {
+				padding: 19.5px !important;
+			}
+		}	
+	}
+}
+
+
+.gform_wrapper {
+
+	&.bc_contact_form_short_wrapper {
+		margin: 0px 0px !important;
+		padding-right: 10px !important;
+		padding-left: 10px !important;
+
+		.gform_footer{
+			padding: 12px !important;
+			margin: 0px 0px !important;
+			input {
+				width: 100% !important;
+				margin-bottom: 10px !important;
+			}
+		}
+	 }
+
+	 &.bc_contact_page_form_wrapper{
+	 	li.gfield{
+	 		padding-left:0px !important;
+			padding-right:0px !important;
+	 	}
+	 	.gform_footer {
+	 		padding: 0px !important;
+			margin: 0px 0px !important;
+			text-align: left;
+	 		.gform_button {
+	 			width: 50%;
+	 			min-width: 40px;
+	 		}
+	 	}
+	 }
+	
+	.gform_description{
+		line-height: 32px;
+	}
+
+	.gform_footer{
+			padding: 12px !important;
+			margin: 0px 0px !important;
+			text-align: center;
+	}
+
+	.gform_heading{
+		display:none;
+	}
+
+	.gform_title{
+		text-align:center;
+		color:$bc_contact_form_label_color;
+	}
+	.top_label{
+
+		div.ginput_container {
+			margin-top:0px !important;;
+		}
+	}
+	ul{
+		li#field_1_6{
+			margin-top: -36px !important;
+			padding-bottom: 20px !important;
+		}
+
+		li#field_1_7{
+			margin-top: -23px !important;
+		}
+
+		li.gfield{
+
+			#input_2_6{
+				padding: 16px !important;
+			}
+
+			#input_3_6{
+				padding: 19px !important;
+			}
+
+			select {
+				option {
+					font-size: 14px;
+				}
+				// background:#ffffff;
+				margin-top: 12px;
+				background: url('../img/br_down.png') no-repeat right #ffffff !important;
+			   -webkit-appearance: none !important;
+			   -moz-appearance:none; /* Firefox */
+			   appearance:none;
+ 			   background-position: right 10px center !important;
+			}
+			::placeholder{
+			//	color:#000000;
+			opacity: 1;
+			font-size: 14px;
+			}
+			margin-top:0px !important;
+			padding-left:16px !important;
+			padding-right:16px !important;
+			.large, .medium{
+				padding:map-get($form_input, padding);
+				border:{
+					radius: map-get($form_input, border-radius);
+					style: solid;
+					width: 1px;
+					color: #c1c1c1;
+				}
+			}
+		}
+		
+	}
+	
+}
+
+
+
+
+// .gform_wrapper ul li.gfield .medium {
+//     border-style: solid !important;
+// }
+ 
+input[type="submit"]{
+	background:map-get($submit_btn, background);
+	padding:map-get($submit_btn, padding);
+	color:map-get($submit_btn, color);
+	border:{
+		radius: map-get($form_input, border-radius);
+		style: map-get($form_input, border);
+	}
+}
+
+.no_hover_underline:hover{
+	text-decoration:none;
+}
+.bc_service_areas_container{
+	background-color:$bc_service_areas_bg_color;
+}
+.bc_contact_form_full {
+	label{
+		color:$bc_contact_form_label_color;
+	}
+}  			
+.bc_footer_copyright_bar{ 
+	.bc_footer_copyright_links{
+		color:$bc_footer_copyright_links_color;
+	}
+}
+.bc_choose_us_text{
+	height: $bc_choose_us_height;
+}
+.bc_coupon_container{
+	border-style:$bc_coupon_border_style
+}
+.bc_home_section_bg{
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.bc_default_primary{
+	background-color:$bc_default_primary;
+}
+
+.bc_hero_container{
+     background-image:$bc_hero_bg;
+    
+	.bc_hero_form_body{
+		background-color:$bc_hero_form_body;	
+	}
+
+}
+
+.bc_hero_form_title{
+		background-color:$bc_hero_form_title;
+		justify-content:center;
+	}
+
+.bc_locations_container{
+	background-image:$bc_locations_bg;
+	.bc_locations_secondary_text {
+		color:$bc_locations_secondary_text;
+	}
+}
+
+.bc_testimonial_swiper{
+	.swiper-slide-container{
+		background-image: url('../img/slider-background.png'); 
+		background-position: center;
+		max-height: 387px;
+		min-height: 240px;
+		max-width: 671px;
+		margin: 0 auto;
+    	padding: 10px;
+    	background-size: contain;
+    	position: relative;
+    	display:flex;
+    	background-repeat:no-repeat; 
+		@media screen and (min-width: 600px) {
+			height: 387px;
+		}
+		@media screen and (max-width: 599px) {
+			height: 240px;
+		} 
+
+		.swiper-slide-content {
+			//vertical-align: middle;
+			margin: auto;
+			max-width: 70%;
+	    	// padding: 10px;
+	    	// position: relative;
+		}
+
+	}
+}
+
+
+.border_width_custom_2{
+border-width:$border_width_custom_2;
+}
+.bc_about_bg{
+	background-color:$bc_about_bg;
+}
+.bc_blog_heading_color{
+	color:$bc_blog_heading_color;
+}
+
+.bc_hero_btn_bg_color{
+	background-color:#f38527;
+}
+
+//Menu dropdown modifications
+.dropdown-item:hover{background-color:#f38527 !important;}
+
+.dropdown-toggle::after {
+  	display:none;
+   // content: "\f107";  /* this is your text. You can also use UTF-8 character codes as I do here */
+   // font-family: "Font Awesome 5 Pro";
+}
+
+.bc_contact_page_form_wrapper{
+
+	.gform_heading{
+		display:block !important;
+	}
+	.gform_title{
+			    font-family: $bc_pacifico;
+				font-size: 26pt !important;
+				text-align: left;
+				color: #00395e;
+				}
+				.gfield {
+						input{
+								padding: 10px 5px !important;
+								border-radius: 6px;
+								border: solid;
+								border-width: 1px;
+								border-color: #ccc;
+								margin-bottom: 15px;
+							 }
+
+						label{
+								color: #4d4d4d;
+								font-size: 14px !important;
+								margin: 0px;
+							}
+
+							select{
+								padding: 10px 5px !important;
+								border-radius: 6px;
+								border: solid;
+								border-width: 1px;
+								border-color: #ccc;
+								margin-bottom: 15px;
+							 }
+							
+						}
+}
+
+
+.bc_alternate_font_white{
+	font-family:Pacifico;
+	color:#ffffff; 
+	font-weight:400;
+
+}
+
+.bc_alternate_font_blue{
+	color:#00395e; 
+	font-family:Pacifico;
+	font-weight:400;
+}
+
+.bc_primary_heading_blue {
+	font-family: Anton;
+	color: #00395e;
+	font-weight:400 !important;
+}
+
+.bc_primary_content_blue {
+	font-family: $bc_roboto;
+	color: #00395e;	
+}
+
+.bc_primary_heading_white {
+	font-family: Anton;
+	color: #ffffff;
+	font-weight:400 !important;
+}
+
+.bc_hero_bg_form_color{
+	background-color: #116eab;
+}
+
+.bc_menu_icon_color{
+	color: #116eab;
+}
+
+body, p, ::placeholder, button {
+  font-family: $bc_roboto;
+  font-weight: normal;
+  line-height: 36px;
+  color: #4d4d4d;
+}
+
+.bc_section_link {
+	color: #00395e !important;
+	font-size: 24px !important;
+}
+
+h1 {
+	color: #00395e;
+}
+
+@-moz-document url-prefix() {
+   .bc_contact_us_container{
+       background-size: 100% 600px;  
+   }
+} 
+
+h5 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+	content: '' !important;
+}
+
+.af-swiper-button-next, .af-swiper-button-prev {
+	color: #555555 !important;
+	top: 60% !important;
+}
+
+.af-swiper-button-next {
+	right: -20px !important;
+}
+
+.af-swiper-button-prev {
+	left: -20px !important;
+}
+
+.bc_testimonial_swiper_prev,  .bc_testimonial_swiper_next{
+	color: #00395e !important ;
+}
+
+.bc_affiliation_swiper{
+	position: initial !important;
+}
+
+footer > p {
+	color:white !important;
+}
+
+.bc_announcement_bar{
+	a{
+		font-size: 16px !important;
+	}
+}
+
+.transparent-input {
+   background-color: rgba(0, 0, 0, 0);
+   border:none;
+   &:focus {
+   	background-color: rgba(256, 256, 256, 1);
+   }
+}
+
+.bc_icon_primary_color_light {
+	color: #5692b9;
+}
+
+.bc_icon_primary_color_dark {
+	color: #ffffff;
+}
+
+//overrides bootstrap pagination class
+.page-item{
+	&.active .page-link{
+		background-color: #ffffff !important;
+		border-color: #00395e !important;
+	}
+	.page-link {
+		color: #4d4d4d !important;
+	}
+
+}
+
+.bc_services_swiper_prev, .bc_services_swiper_next{
+	top: 35% !important;
+}
+
+.bc_hero_swiper{
+	.swiper-pagination-bullet-active{
+		background:#116eab;
+	}
+}
+
+.wrench-man {
+	right: 0;
+	margin-top: -6em;
+	margin-right: 0;
+	overflow: hidden;
+}
+
+.nunito {
+	font-family: Nunito;
+}
+
+.bc_our_services {
+	.btn{
+		padding:5px 35px !important;
+	}
+}
+
+.bc_choose_us_text{
+ 	&::-webkit-scrollbar {
+	 	width: 10px;
+	 	background-color: 'lightgrey';
+	}	
+	&::-webkit-scrollbar-thumb {
+		background-color: #f38527;
+	}
+
+	scrollbar-color: #f38527 lightgrey;  
+}
+
+.bc_branding_btn_2{
+	background-color: #116eab;
+	color: #ffffff !important; 
+}
+
+.dropdown-menu{
+	border-radius: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.bc_affliations_img{
+	-webkit-filter: grayscale(100%);
+  	filter: grayscale(100%);
+  	&:hover{
+  		-webkit-filter: grayscale(0%);
+  		filter: grayscale(0%);
+  	}
+}
